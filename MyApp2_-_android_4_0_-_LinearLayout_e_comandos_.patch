@@ -1,0 +1,74 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(date 1598318381324)
++++ app/src/main/res/layout/activity_main.xml	(date 1598318381324)
+@@ -0,0 +1,65 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    tools:context=".MainActivity">
++
++    <TextView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_gravity="center_horizontal"
++        android:layout_marginTop="30dp"
++        android:layout_marginBottom="50dp"
++        android:text="Nome da empresa!"
++        android:textColor="@color/colorPrimaryDark"
++        android:textSize="30sp"
++        android:textStyle="bold" />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginLeft="10dp"
++        android:layout_marginRight="10dp"
++        android:text="Usuário:"
++        android:textSize="20sp"
++        android:textStyle="italic" />
++
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginLeft="10dp"
++        android:layout_marginRight="10dp"
++        android:layout_marginBottom="30dp" />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginLeft="10dp"
++        android:layout_marginRight="10dp"
++        android:text="Senha:"
++        android:textSize="20sp"
++        android:textStyle="italic" />
++
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginLeft="10dp"
++        android:layout_marginRight="10dp"
++        android:layout_marginBottom="30dp" />
++
++    <Button
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:background="@android:color/holo_green_light"
++        android:text="Entrar" />
++
++    <Button
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:background="@android:color/holo_red_light"
++        android:text="Sair" />
++
++</LinearLayout>
+\ No newline at end of file

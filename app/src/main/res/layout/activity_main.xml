@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +22,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
-        android:text="Nome da empresa!"
+        android:text="@string/alquimistas_federais"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -23,43 +32,80 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Usuário:"
+        android:text="@string/alquimista"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="italic" />
 
     <EditText
+        android:hint="@string/insira_o_usu_rio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:drawableRight="@drawable/ic_user_ini"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:autofillHints=""
+        android:importantForAutofill="no"
+        android:drawableEnd="@drawable/ic_user_ini" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Senha:"
+        android:text="@string/senha"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="italic" />
 
     <EditText
+        android:hint="@string/insira_a_senha_do_usu_rio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:drawableRight="@drawable/ic_pass_ini"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/ic_pass_ini"
+        android:autofillHints="" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8sp"
         android:background="@android:color/holo_green_light"
-        android:text="Entrar" />
+        android:text="@string/entrar"
+        android:textColor="@android:color/black"/>
 
     <Button
         android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8sp"
         android:background="@android:color/holo_red_light"
-        android:text="Sair" />
+        android:text="@string/sair" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/esqueceu_a_senha"
+        android:textColor="@android:color/black"
+        android:gravity="end" />
 
 </LinearLayout>
