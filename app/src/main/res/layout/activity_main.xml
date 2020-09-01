@@ -64,7 +64,7 @@
         android:textStyle="italic" />
 
     <EditText
-        android:hint="@string/insira_a_senha_do_usu_rio"
+        android:hint="@string/insira_a_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
